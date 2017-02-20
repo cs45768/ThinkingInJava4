@@ -11,8 +11,10 @@ public class MathOps {
     Random rand = new Random(47);
     int i, j, k;
     // Choose value from 1 to 100:
+  
     j = rand.nextInt(100) + 1;
     print("j : " + j);
+ 
     k = rand.nextInt(100) + 1;
     print("k : " + k);
     i = j + k;

@@ -12,6 +12,10 @@ public class Practice10 {
 		System.out.println((i^j));
 		System.out.println(Integer.toBinaryString(~i));
 		System.out.println(Integer.toBinaryString(i^j));
+		
+		 short b = 31;
+	     int i = b >>2;
+	     System.out.println(i);
 	}
 
 }

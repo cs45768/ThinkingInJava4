@@ -10,6 +10,9 @@ public class Practice8 {
 			
 			System.out.println(Long.toBinaryString(l));
 			System.out.println(Long.toBinaryString(l1));
+			
+			int i=11213;
+			System.out.println(~i);
 	}
 
 }
