@@ -7,15 +7,28 @@ public class Practice5 {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(Integer.toBinaryString(i));
-		System.out.println(Integer.toBinaryString(j));
-		System.out.println((i^j));
-		System.out.println(Integer.toBinaryString(~i));
-		System.out.println(Integer.toBinaryString(i^j));
+		 int a = 0xAAAA;
+	        int b = 0x5555;
+	        int c;
+	        c = a & b;
+	        outCBit(c);
+	        c = a | b;
+	        outCBit(c);
+	        c = ~a;
+	        outCBit(c);
+	        c = a ^ b;
+	        outCBit(c);
 		
-		 short b = 31;
-	     int i = b >>2;
-	     System.out.println(i);
 	}
+	
+	 private static void outCBit(int c) {
+	        int d = 0x8000;
+	        for (int i = 0; i < 16; i++) {
+	            int out = (c | d) == c ? 1 : 0;//循环比较得出每一位
+	            System.out.print(out);
+	            d>>>=1;
+	        }
+	        System.out.println();
+	    }
 
 }
