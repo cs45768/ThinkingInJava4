@@ -12,6 +12,7 @@ public class TestStatic {
 		System.out.println(s1.j == s2.j);
 		String[] strings = null;
 		System.out.println(strings);
+		
 	}
 
 }
