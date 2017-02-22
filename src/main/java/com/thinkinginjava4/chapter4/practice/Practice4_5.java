@@ -1,6 +1,6 @@
 package com.thinkinginjava4.chapter4.practice;
 
-public class Practice5 {
+public class Practice4_5 {
 
 	static int i=0X16;
 	static int j=0X17;

@@ -1,6 +1,6 @@
 package com.thinkinginjava4.chapter4.practice;
 
-public class Practice1 {
+public class Practice4_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

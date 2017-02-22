@@ -2,7 +2,7 @@ package com.thinkinginjava4.chapter4.practice;
 
 import java.util.Random;
 
-public class Practice3 {
+public class Practice4_3 {
 
 	public static void main(String[] args) {
 		while (true) {

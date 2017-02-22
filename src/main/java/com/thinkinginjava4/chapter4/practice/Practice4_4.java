@@ -1,6 +1,6 @@
 package com.thinkinginjava4.chapter4.practice;
 
-public class Practice4 {
+public class Practice4_4 {
 
 	static void testPrime(int number){
 		if (number<2) {
