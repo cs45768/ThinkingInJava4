@@ -16,20 +16,37 @@ public class Practice4_10 {
 	  static void productTest (int i, int m, int n) {  
           sum++;  
           if(m * n == i) System.out.println(i + " = " + m + " * " + n);  
-      }    
+      }   
+	  
+	  static int com (char c1,char c2) {  
+		  return Integer.parseInt(c1+""+c2);
+      }  
 	  
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-			int sum1=0,sum2=0;
-			System.out.println(1201%100);
-			for (int i = 1000; i < 2000; i++) {
+			for (int i = 1000; i < 10000; i++) {
 				if (i%100==0) {
 					continue;
 				}
 				char[] c=(i+"").toCharArray();
-				//productTest (i,int(c[0]+c[1]), int(c[0]+c[1])) ;
+				productTest (i,com(c[0],c[1]), com(c[2],c[3])) ;
+				productTest (i,com(c[0],c[1]), com(c[3],c[2])) ;
+				productTest (i,com(c[0],c[2]), com(c[1],c[3])) ;
+				productTest (i,com(c[0],c[2]), com(c[3],c[1])) ;
+				productTest (i,com(c[0],c[3]), com(c[1],c[2])) ;
+				productTest (i,com(c[0],c[3]), com(c[2],c[1])) ;
+				
+				productTest (i,com(c[1],c[0]), com(c[2],c[3])) ;
+				productTest (i,com(c[1],c[0]), com(c[3],c[2])) ;
+				productTest (i,com(c[2],c[0]), com(c[1],c[3])) ;
+				productTest (i,com(c[2],c[0]), com(c[3],c[1])) ;
+				productTest (i,com(c[3],c[0]), com(c[1],c[2])) ;
+				productTest (i,com(c[3],c[0]), com(c[2],c[1])) ;
 			}
+			System.out.println("总共调用判断的次数为："+sum);//TMJG添加此行并注释  
 			
+			char cc='0';
+			System.out.println(cc==0);
 		}
 		
 	  // control/VampireNumbers.java  
@@ -44,7 +61,7 @@ public class Practice4_10 {
 //  本方法是顺向思维，即先有四位数，再拆分，四个数字组合相乘，若乘积与原数相等，则输出，并计算为一个吸血鬼数字。TMJG添加此行并注释  
 //  其实sum的结果为107976次，非常大，算法效率很低，并且出现了重复（6880 = 86 * 80，6880 = 80 * 86）。TMJG添加此行并注释  
       
-    /*        static int sum=0;//记录调用判断的次数,TMJG添加此行并注释  
+        /*    static int sum=0;//记录调用判断的次数,TMJG添加此行并注释  
             static int a(int i) {  
                 return i/1000;    //求千位数字，下同,TMJG添加此行并注释  
             }  
