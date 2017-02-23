@@ -12,6 +12,12 @@ import com.sun.org.glassfish.external.statistics.Statistic;
  * */
 public class Practice4_10 {
 	  static int sum=0;//记录调用判断的次数,TMJG添加此行并注释  
+	  
+	  static void productTest (int i, int m, int n) {  
+          sum++;  
+          if(m * n == i) System.out.println(i + " = " + m + " * " + n);  
+      }    
+	  
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 			int sum1=0,sum2=0;
@@ -21,10 +27,7 @@ public class Practice4_10 {
 					continue;
 				}
 				char[] c=(i+"").toCharArray();
-				for (int j = 0; j <c.length ; j++) {
-					System.out.print(c[j]+" ");
-				}
-				System.out.println();
+				//productTest (i,int(c[0]+c[1]), int(c[0]+c[1])) ;
 			}
 			
 		}
