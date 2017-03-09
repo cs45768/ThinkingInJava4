@@ -7,9 +7,9 @@ public class Practice5_2 {
 		if (s==string) {
 			System.out.println("两个相等");
 		}
-		if (s.equals(string)) {
+		/*if (s.equals(string)) {
 			System.out.println("两个equel");
-		}
+		}*/
 		System.out.println("默认String值："+s);
 	}
 	public static void main(String[] args) {
