@@ -37,7 +37,7 @@ public class ConnectionManager {
 
 class Connection {
 	    private Connection(){//构造方法私有，无法被直接通过构造方法创建
-	        System.out.println("connection is created");
+	        System.out.println("connection is created111111");
 	    }
 	    private static Connection connection;
 	    public static Connection get(){
