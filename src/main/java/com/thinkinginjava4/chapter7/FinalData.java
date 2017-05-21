@@ -41,10 +41,14 @@ public class FinalData {
     //! fd1.VAL_3 = new Value(1); // change reference
     //! fd1.a = new int[3];
     print(fd1);
+    print(fd1.v1.i);
     print("Creating new FinalData");
     FinalData fd2 = new FinalData("fd2");
+    print(fd2.v1.i);
     print(fd1);
     print(fd2);
+    FinalData fd3 = new FinalData("fd3");
+    print(fd3);
   }
 } /* Output:
 fd1: i4 = 15, INT_5 = 18

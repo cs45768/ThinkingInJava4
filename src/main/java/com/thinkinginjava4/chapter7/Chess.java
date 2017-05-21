@@ -6,20 +6,20 @@ import static net.mindview.util.Print.*;
 
 class Game {
   Game(int i) {
-    print("Game constructor");
+    print("Game constructor"+i);
   }
 }
 
 class BoardGame extends Game {
   BoardGame(int i) {
     super(i);
-    print("BoardGame constructor");
+    print("BoardGame constructor"+i);
   }
 }	
 
 public class Chess extends BoardGame {
   Chess() {
-    super(11);
+	  super(11);
     print("Chess constructor");
   }
   public static void main(String[] args) {
